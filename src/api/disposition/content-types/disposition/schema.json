@@ -9,54 +9,35 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "required": true
     },
-    "Content": {
+    "content": {
       "type": "blocks",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "required": true
     },
-    "Reference": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+    "reference": {
+      "type": "string"
     },
-    "Source": {
+    "source": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::source.source"
     },
-    "Themes": {
+    "themes": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::theme.theme"
     },
-    "Regions": {
+    "regions": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::region.region"
     },
-    "Ethnicities": {
+    "ethnicities": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::ethnicity.ethnicity"

@@ -9,28 +9,14 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "required": true
     },
-    "Type": {
+    "type": {
       "type": "enumeration",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "enum": [
         "Loi Formelle",
         "Loi Religieuse",
@@ -38,13 +24,8 @@
         "Jurisprudence"
       ]
     },
-    "Description": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+    "description": {
+      "type": "text"
     }
   }
 }

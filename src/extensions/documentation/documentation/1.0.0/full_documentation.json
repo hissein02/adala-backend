@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-11-28T17:00:34.877Z"
+    "x-generation-date": "2025-11-28T21:20:01.390Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -4351,19 +4351,19 @@
         "properties": {
           "data": {
             "required": [
-              "Title",
-              "Content"
+              "title",
+              "content"
             ],
             "type": "object",
             "properties": {
-              "Title": {
+              "title": {
                 "type": "string"
               },
-              "Content": {},
-              "Reference": {
+              "content": {},
+              "reference": {
                 "type": "string"
               },
-              "Source": {
+              "source": {
                 "oneOf": [
                   {
                     "type": "integer"
@@ -4374,7 +4374,7 @@
                 ],
                 "example": "string or id"
               },
-              "Themes": {
+              "themes": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -4388,7 +4388,7 @@
                   "example": "string or id"
                 }
               },
-              "Regions": {
+              "regions": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -4402,7 +4402,7 @@
                   "example": "string or id"
                 }
               },
-              "Ethnicities": {
+              "ethnicities": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -4475,8 +4475,8 @@
       "Disposition": {
         "type": "object",
         "required": [
-          "Title",
-          "Content"
+          "title",
+          "content"
         ],
         "properties": {
           "id": {
@@ -4485,14 +4485,14 @@
           "documentId": {
             "type": "string"
           },
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Content": {},
-          "Reference": {
+          "content": {},
+          "reference": {
             "type": "string"
           },
-          "Source": {
+          "source": {
             "type": "object",
             "properties": {
               "id": {
@@ -4501,10 +4501,10 @@
               "documentId": {
                 "type": "string"
               },
-              "Name": {
+              "name": {
                 "type": "string"
               },
-              "Type": {
+              "type": {
                 "type": "string",
                 "enum": [
                   "Loi Formelle",
@@ -4513,7 +4513,7 @@
                   "Jurisprudence"
                 ]
               },
-              "Description": {
+              "description": {
                 "type": "string"
               },
               "createdAt": {
@@ -4821,7 +4821,7 @@
               }
             }
           },
-          "Themes": {
+          "themes": {
             "type": "array",
             "items": {
               "type": "object",
@@ -4832,30 +4832,16 @@
                 "documentId": {
                   "type": "string"
                 },
-                "Name": {
+                "name": {
                   "type": "string"
                 },
-                "Slug": {
+                "slug": {
                   "type": "string"
                 },
-                "Icon": {
+                "icon": {
                   "type": "string"
                 },
-                "Parent": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "id": {
-                        "type": "number"
-                      },
-                      "documentId": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                },
-                "Children": {
+                "parent": {
                   "type": "object",
                   "properties": {
                     "id": {
@@ -4920,7 +4906,7 @@
               }
             }
           },
-          "Regions": {
+          "regions": {
             "type": "array",
             "items": {
               "type": "object",
@@ -4931,7 +4917,7 @@
                 "documentId": {
                   "type": "string"
                 },
-                "Name": {
+                "name": {
                   "type": "string"
                 },
                 "createdAt": {
@@ -4988,7 +4974,7 @@
               }
             }
           },
-          "Ethnicities": {
+          "ethnicities": {
             "type": "array",
             "items": {
               "type": "object",
@@ -4999,7 +4985,7 @@
                 "documentId": {
                   "type": "string"
                 },
-                "Name": {
+                "name": {
                   "type": "string"
                 },
                 "createdAt": {
@@ -5104,14 +5090,14 @@
                 "documentId": {
                   "type": "string"
                 },
-                "Title": {
+                "title": {
                   "type": "string"
                 },
-                "Content": {},
-                "Reference": {
+                "content": {},
+                "reference": {
                   "type": "string"
                 },
-                "Source": {
+                "source": {
                   "type": "object",
                   "properties": {
                     "id": {
@@ -5122,7 +5108,7 @@
                     }
                   }
                 },
-                "Themes": {
+                "themes": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -5136,7 +5122,7 @@
                     }
                   }
                 },
-                "Regions": {
+                "regions": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -5150,7 +5136,7 @@
                     }
                   }
                 },
-                "Ethnicities": {
+                "ethnicities": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -5239,11 +5225,11 @@
         "properties": {
           "data": {
             "required": [
-              "Name"
+              "name"
             ],
             "type": "object",
             "properties": {
-              "Name": {
+              "name": {
                 "type": "string"
               },
               "locale": {
@@ -5305,7 +5291,7 @@
       "Ethnicity": {
         "type": "object",
         "required": [
-          "Name"
+          "name"
         ],
         "properties": {
           "id": {
@@ -5314,7 +5300,7 @@
           "documentId": {
             "type": "string"
           },
-          "Name": {
+          "name": {
             "type": "string"
           },
           "createdAt": {
@@ -5617,7 +5603,7 @@
                 "documentId": {
                   "type": "string"
                 },
-                "Name": {
+                "name": {
                   "type": "string"
                 },
                 "createdAt": {
@@ -6800,11 +6786,11 @@
         "properties": {
           "data": {
             "required": [
-              "Name"
+              "name"
             ],
             "type": "object",
             "properties": {
-              "Name": {
+              "name": {
                 "type": "string"
               },
               "locale": {
@@ -6866,7 +6852,7 @@
       "Region": {
         "type": "object",
         "required": [
-          "Name"
+          "name"
         ],
         "properties": {
           "id": {
@@ -6875,7 +6861,7 @@
           "documentId": {
             "type": "string"
           },
-          "Name": {
+          "name": {
             "type": "string"
           },
           "createdAt": {
@@ -7178,7 +7164,7 @@
                 "documentId": {
                   "type": "string"
                 },
-                "Name": {
+                "name": {
                   "type": "string"
                 },
                 "createdAt": {
@@ -7256,14 +7242,14 @@
         "properties": {
           "data": {
             "required": [
-              "Name"
+              "name"
             ],
             "type": "object",
             "properties": {
-              "Name": {
+              "name": {
                 "type": "string"
               },
-              "Type": {
+              "type": {
                 "type": "string",
                 "enum": [
                   "Loi Formelle",
@@ -7272,7 +7258,7 @@
                   "Jurisprudence"
                 ]
               },
-              "Description": {
+              "description": {
                 "type": "string"
               },
               "locale": {
@@ -7334,7 +7320,7 @@
       "Source": {
         "type": "object",
         "required": [
-          "Name"
+          "name"
         ],
         "properties": {
           "id": {
@@ -7343,10 +7329,10 @@
           "documentId": {
             "type": "string"
           },
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Type": {
+          "type": {
             "type": "string",
             "enum": [
               "Loi Formelle",
@@ -7355,7 +7341,7 @@
               "Jurisprudence"
             ]
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
           "createdAt": {
@@ -7658,10 +7644,10 @@
                 "documentId": {
                   "type": "string"
                 },
-                "Name": {
+                "name": {
                   "type": "string"
                 },
-                "Type": {
+                "type": {
                   "type": "string",
                   "enum": [
                     "Loi Formelle",
@@ -7670,7 +7656,7 @@
                     "Jurisprudence"
                   ]
                 },
-                "Description": {
+                "description": {
                   "type": "string"
                 },
                 "createdAt": {
@@ -7748,35 +7734,21 @@
         "properties": {
           "data": {
             "required": [
-              "Name",
-              "Slug"
+              "name",
+              "slug"
             ],
             "type": "object",
             "properties": {
-              "Name": {
+              "name": {
                 "type": "string"
               },
-              "Slug": {
+              "slug": {
                 "type": "string"
               },
-              "Icon": {
+              "icon": {
                 "type": "string"
               },
-              "Parent": {
-                "type": "array",
-                "items": {
-                  "oneOf": [
-                    {
-                      "type": "integer"
-                    },
-                    {
-                      "type": "string"
-                    }
-                  ],
-                  "example": "string or id"
-                }
-              },
-              "Children": {
+              "parent": {
                 "oneOf": [
                   {
                     "type": "integer"
@@ -7846,8 +7818,8 @@
       "Theme": {
         "type": "object",
         "required": [
-          "Name",
-          "Slug"
+          "name",
+          "slug"
         ],
         "properties": {
           "id": {
@@ -7856,367 +7828,16 @@
           "documentId": {
             "type": "string"
           },
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Slug": {
+          "slug": {
             "type": "string"
           },
-          "Icon": {
+          "icon": {
             "type": "string"
           },
-          "Parent": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "id": {
-                  "type": "number"
-                },
-                "documentId": {
-                  "type": "string"
-                },
-                "Name": {
-                  "type": "string"
-                },
-                "Slug": {
-                  "type": "string"
-                },
-                "Icon": {
-                  "type": "string"
-                },
-                "Parent": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "id": {
-                        "type": "number"
-                      },
-                      "documentId": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                },
-                "Children": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "number"
-                    },
-                    "documentId": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "createdAt": {
-                  "type": "string",
-                  "format": "date-time"
-                },
-                "updatedAt": {
-                  "type": "string",
-                  "format": "date-time"
-                },
-                "publishedAt": {
-                  "type": "string",
-                  "format": "date-time"
-                },
-                "createdBy": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "number"
-                    },
-                    "documentId": {
-                      "type": "string"
-                    },
-                    "firstname": {
-                      "type": "string"
-                    },
-                    "lastname": {
-                      "type": "string"
-                    },
-                    "username": {
-                      "type": "string"
-                    },
-                    "email": {
-                      "type": "string",
-                      "format": "email"
-                    },
-                    "resetPasswordToken": {
-                      "type": "string"
-                    },
-                    "registrationToken": {
-                      "type": "string"
-                    },
-                    "isActive": {
-                      "type": "boolean"
-                    },
-                    "roles": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "number"
-                          },
-                          "documentId": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "code": {
-                            "type": "string"
-                          },
-                          "description": {
-                            "type": "string"
-                          },
-                          "users": {
-                            "type": "array",
-                            "items": {
-                              "type": "object",
-                              "properties": {
-                                "id": {
-                                  "type": "number"
-                                },
-                                "documentId": {
-                                  "type": "string"
-                                }
-                              }
-                            }
-                          },
-                          "permissions": {
-                            "type": "array",
-                            "items": {
-                              "type": "object",
-                              "properties": {
-                                "id": {
-                                  "type": "number"
-                                },
-                                "documentId": {
-                                  "type": "string"
-                                },
-                                "action": {
-                                  "type": "string"
-                                },
-                                "actionParameters": {},
-                                "subject": {
-                                  "type": "string"
-                                },
-                                "properties": {},
-                                "conditions": {},
-                                "role": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "number"
-                                    },
-                                    "documentId": {
-                                      "type": "string"
-                                    }
-                                  }
-                                },
-                                "createdAt": {
-                                  "type": "string",
-                                  "format": "date-time"
-                                },
-                                "updatedAt": {
-                                  "type": "string",
-                                  "format": "date-time"
-                                },
-                                "publishedAt": {
-                                  "type": "string",
-                                  "format": "date-time"
-                                },
-                                "createdBy": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "number"
-                                    },
-                                    "documentId": {
-                                      "type": "string"
-                                    }
-                                  }
-                                },
-                                "updatedBy": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "number"
-                                    },
-                                    "documentId": {
-                                      "type": "string"
-                                    }
-                                  }
-                                },
-                                "locale": {
-                                  "type": "string"
-                                },
-                                "localizations": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "id": {
-                                        "type": "number"
-                                      },
-                                      "documentId": {
-                                        "type": "string"
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "createdAt": {
-                            "type": "string",
-                            "format": "date-time"
-                          },
-                          "updatedAt": {
-                            "type": "string",
-                            "format": "date-time"
-                          },
-                          "publishedAt": {
-                            "type": "string",
-                            "format": "date-time"
-                          },
-                          "createdBy": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "number"
-                              },
-                              "documentId": {
-                                "type": "string"
-                              }
-                            }
-                          },
-                          "updatedBy": {
-                            "type": "object",
-                            "properties": {
-                              "id": {
-                                "type": "number"
-                              },
-                              "documentId": {
-                                "type": "string"
-                              }
-                            }
-                          },
-                          "locale": {
-                            "type": "string"
-                          },
-                          "localizations": {
-                            "type": "array",
-                            "items": {
-                              "type": "object",
-                              "properties": {
-                                "id": {
-                                  "type": "number"
-                                },
-                                "documentId": {
-                                  "type": "string"
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "blocked": {
-                      "type": "boolean"
-                    },
-                    "preferedLanguage": {
-                      "type": "string"
-                    },
-                    "createdAt": {
-                      "type": "string",
-                      "format": "date-time"
-                    },
-                    "updatedAt": {
-                      "type": "string",
-                      "format": "date-time"
-                    },
-                    "publishedAt": {
-                      "type": "string",
-                      "format": "date-time"
-                    },
-                    "createdBy": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "number"
-                        },
-                        "documentId": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "updatedBy": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "number"
-                        },
-                        "documentId": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "locale": {
-                      "type": "string"
-                    },
-                    "localizations": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "number"
-                          },
-                          "documentId": {
-                            "type": "string"
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "updatedBy": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "number"
-                    },
-                    "documentId": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "id": {
-                        "type": "number"
-                      },
-                      "documentId": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "Children": {
+          "parent": {
             "type": "object",
             "properties": {
               "id": {
@@ -8224,6 +7845,329 @@
               },
               "documentId": {
                 "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "string"
+              },
+              "icon": {
+                "type": "string"
+              },
+              "parent": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "documentId": {
+                    "type": "string"
+                  }
+                }
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "updatedAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "publishedAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "createdBy": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "documentId": {
+                    "type": "string"
+                  },
+                  "firstname": {
+                    "type": "string"
+                  },
+                  "lastname": {
+                    "type": "string"
+                  },
+                  "username": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "resetPasswordToken": {
+                    "type": "string"
+                  },
+                  "registrationToken": {
+                    "type": "string"
+                  },
+                  "isActive": {
+                    "type": "boolean"
+                  },
+                  "roles": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "number"
+                        },
+                        "documentId": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "code": {
+                          "type": "string"
+                        },
+                        "description": {
+                          "type": "string"
+                        },
+                        "users": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "documentId": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        },
+                        "permissions": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "documentId": {
+                                "type": "string"
+                              },
+                              "action": {
+                                "type": "string"
+                              },
+                              "actionParameters": {},
+                              "subject": {
+                                "type": "string"
+                              },
+                              "properties": {},
+                              "conditions": {},
+                              "role": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "documentId": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "createdAt": {
+                                "type": "string",
+                                "format": "date-time"
+                              },
+                              "updatedAt": {
+                                "type": "string",
+                                "format": "date-time"
+                              },
+                              "publishedAt": {
+                                "type": "string",
+                                "format": "date-time"
+                              },
+                              "createdBy": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "documentId": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "updatedBy": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "documentId": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "locale": {
+                                "type": "string"
+                              },
+                              "localizations": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "number"
+                                    },
+                                    "documentId": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "createdAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "updatedAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "publishedAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "createdBy": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "number"
+                            },
+                            "documentId": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "updatedBy": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "number"
+                            },
+                            "documentId": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "locale": {
+                          "type": "string"
+                        },
+                        "localizations": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "documentId": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "blocked": {
+                    "type": "boolean"
+                  },
+                  "preferedLanguage": {
+                    "type": "string"
+                  },
+                  "createdAt": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "updatedAt": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "publishedAt": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "createdBy": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "number"
+                      },
+                      "documentId": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "updatedBy": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "number"
+                      },
+                      "documentId": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "locale": {
+                    "type": "string"
+                  },
+                  "localizations": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "number"
+                        },
+                        "documentId": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "updatedBy": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "documentId": {
+                    "type": "string"
+                  }
+                }
+              },
+              "locale": {
+                "type": "string"
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "documentId": {
+                      "type": "string"
+                    }
+                  }
+                }
               }
             }
           },
