@@ -629,7 +629,7 @@ export interface ApiSourceSource extends Struct.CollectionTypeSchema {
       }>;
     publishedAt: Schema.Attribute.DateTime;
     type: Schema.Attribute.Enumeration<
-      ['Loi Formelle', 'Loi Religieuse', 'Coutume', 'Jurisprudence']
+      ['Droit Positif', 'Loi Religieuse', 'Coutume', 'Jurisprudence']
     > &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
