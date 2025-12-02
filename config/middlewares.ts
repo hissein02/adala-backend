@@ -19,6 +19,7 @@ export default ({ env }) => [
     config: {
       headers: '*',
       origin: [
+        'https://adala-tchad.com',
         'https://adala.youzverse.com',
         'http://localhost:1337',
         'http://localhost:3000',
